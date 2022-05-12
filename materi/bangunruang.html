@@ -1,0 +1,91 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardut Calculator</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% include 'navbar.html' %}
+<div class="container">
+  <div class="row row-cols-3 row-cols-md-6 g-4">
+      <div class="col">
+        <a href="/kubus">
+        <button class="btn btn-defalut">
+          <div class="card" style="width: 7rem;">
+              <img src="{% static 'images/kubus.jpeg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+              <center><h6 class="card-text">Kubus</h6></center>
+              </div>
+            </div> 
+          </div></button></a>
+          <div class="col">
+            <a href="/balok">
+              <button class="btn btn-defalut">
+                <div class="card" style="width: 7rem;">
+                  <img src="{% static 'images/balok.jpeg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                  <center><h6 class="card-text">Balok</h6></center>
+                  </div>
+                </div> 
+              </div></button></a>
+              <div class="col">
+                <a href="/kerucut">
+                 <button class="btn btn-defalut">
+                   <div class="card" style="width: 7rem;">
+                     <img src="{% static 'images/kerucut.jpeg' %}" class="card-img-top" alt="...">
+                     <div class="card-body">
+                     <center><h6 class="card-text">Kerucut</h6></center>
+                    </div>
+                  </div> 
+                </div></button></a>
+                <div class="col">
+                  <a href="/bola">
+                    <button class="btn btn-defalut">
+                    <div class="card" style="width: 7rem;">
+                      <img src="{% static 'images/bola.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <center><h6 class="card-text">Bola</h6></center>
+                    </div>
+                  </div> 
+                </div></button></a>
+                    <div class="col">
+                      <a href="/tabung">
+                        <button class="btn btn-defalut">
+                        <div class="card" style="width:7rem;">
+                          <img src="{% static 'images/tabung.jpeg' %}" class="card-img-top" alt="...">
+                          <div class="card-body">
+                          <center><h6 class="card-text">Tabung</h6></center>
+                        </div>
+                      </div> 
+                    </div></button></a>
+                      <div class="col">
+                        <a href="/prismasegi3">
+                          <button class="btn btn-defalut">
+                          <div class="card" style="width:7rem;">
+                            <img src="{% static 'images/prismasegitiga.jpeg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <center><h6 class="card-text">Prisma Segitiga</h6></center>
+                          </div>
+                        </div> 
+                      </div></button></a>
+                        <div class="col">
+                          <a href="/limassegi4">
+                            <button class="btn btn-defalut">
+                            <div class="card" style="width:7rem;">
+                              <img src="{% static 'images/limassegiempat.jpeg' %}" class="card-img-top" alt="...">
+                              <div class="card-body">
+                              <center><h6 class="card-text">Limas Segiempat</h6></center>
+                            </div>
+                          </div> 
+                        </div></button></a>
+    {% block content %}
+    {% endblock %}
+ 
+ <script>src="{% static 'js/bootstrap.bundle.js' %}"</script>
+</body>
+</html>

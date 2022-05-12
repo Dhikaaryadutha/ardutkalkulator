@@ -1,0 +1,89 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardut Calculator</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% include 'navbar.html' %}
+<div class="container">
+  <div class="row row-cols-3 row-cols-md-6 g-4">
+      <div class="col">
+        <a href="/bangundatar">
+        <button class="btn btn-defalut">
+          <div class="card" style="width: 7rem;">
+              <img src="{% static 'images/persegi1.jpeg' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+              <center><h6 class="card-text">Bangun Datar</h6></center>
+              </div>
+            </div> 
+          </div></button></a>
+          <div class="col">
+            <a href="/bangunruang">
+              <button class="btn btn-defalut">
+                <div class="card" style="width: 7rem;">
+                  <img src="{% static 'images/kubus.jpeg' %}" class="card-img-top" alt="...">
+                  <div class="card-body">
+                  <center><h6 class="card-text">Bangun Ruang</h6></center>
+                  </div>
+                </div> 
+              </div></button></a>
+              <div class="col">
+                <a href="/pythagoras">
+                 <button class="btn btn-defalut">
+                   <div class="card" style="width: 7.5rem;">
+                     <img src="{% static 'images/pythagoras.jpeg' %}" class="card-img-top" alt="...">
+                     <div class="card-body">
+                     <center><h6 class="card-text">Pythagoras</h6></center>
+                    </div>
+                  </div> 
+                </div></button></a>
+                <div class="col">
+                  <a href="/panjang">
+                    <button class="btn btn-defalut">
+                    <div class="card" style="width: 7rem;">
+                      <img src="{% static 'images/penggaris1.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <center><h6 class="card-text">Panjang</h6></center>
+                    </div>
+                  </div> 
+                </div></button></a>
+                <div class="col">
+                  <a href="/berat">
+                    <button class="btn btn-defalut">
+                    <div class="card" style="width: 7rem;">
+                      <img src="{% static 'images/berat.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <center><h6 class="card-text">Berat</h6></center>
+                    </div>
+                  </div> 
+                </div></button></a>
+                <div class="col">
+                  <a href="/kpk">
+                    <button class="btn btn-defalut">
+                    <div class="card" style="width: 7rem;">
+                      <img src="{% static 'images/kpk1.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <center><h6 class="card-text">KPK & FPB</h6></center>
+                    </div>
+                  </div> 
+                </div></button></a>
+                <div class="col">
+                  <a href="/suhu">
+                    <button class="btn btn-defalut">
+                    <div class="card" style="width: 7rem;">
+                      <img src="{% static 'images/suhu.jpeg' %}" class="card-img-top" alt="...">
+                      <div class="card-body">
+                      <center><h6 class="card-text">Suhu</h6></center>
+                    </div>
+                  </div> 
+                </div></button></a>
+ 
+    <script>src="{% static 'js/bootstrap.bundle.js' %}"</script>
+</body>
+</html>

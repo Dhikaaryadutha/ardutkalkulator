@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+{%include 'navbar.html'%}
+<div class="card mb-3" style="max-width: 400px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/lingkaran.jpeg' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Lingkaran</h5>
+        <p class="card-text">Masukkan jari-jari:</p>
+        <form method="post">
+            {% csrf_token %}
+            <table>
+              {{jj_lingkaran.as_table}}
+            </table>
+            <br>
+            <br>
+            <button type="submit">Hitung</button>
+        </form>
+    </div>
+  </div>
+</div>
+{% if pesan %}
+  <div class="alert alert-success">{{pesan}}{{luas_lingkaran}}</div>
+  <div class="alert alert-success">{{pesankl}}{{kl_lingkaran}}</div>
+
+{% endif %}
+  <script>src="{% static 'js/bootstrap.bundle.js' %}"</script>
+</body>
+</html>

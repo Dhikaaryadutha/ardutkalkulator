@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+{%include 'navbar.html'%}
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="{% static 'images/pythagoras.jpeg' %}" class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Pythagoras</h5>
+        <p class="card-text">Pilih sisi yang ingin diselesaikan:</p>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Pilih Sisi
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="/sisia">Sisi a</a></li>
+            <li><a class="dropdown-item" href="/sisib">Sisi b</a></li>
+            <li><a class="dropdown-item" href="/sisic">Sisi c</a></li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>
+
+  <script>src="{% static 'js/bootstrap.bundle.js' %}"</script>
+</body>
+</html>

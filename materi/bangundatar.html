@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ardut Calculator</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+{% include 'navbar.html' %}
+<div class="container">
+    <div class="row row-cols-3 row-cols-md-6 g-4">
+        <div class="col">
+          <a href="/persegi">
+          <button class="btn btn-defalut">
+            <div class="card" style="width: 7rem;">
+                <img src="{% static 'images/persegi2.jpeg' %}" class="card-img-top" alt="...">
+                <div class="card-body">
+                <center><h6 class="card-text">Persegi</h6></center>
+                </div>
+              </div> 
+            </div></button></a>
+            <div class="col">
+              <a href="/persegipanjang1">
+              <button class="btn btn-defalut">
+                <div class="card" style="width: 7rem;">
+                    <img src="{% static 'images/persegipanjang3.jpeg' %}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                    <center><h6 class="card-text">Persegi Panjang</h6></center>
+                    </div>
+                  </div> 
+                </div></button></a>
+                <div class="col">
+                  <a href="/segitiga">
+                   <button class="btn btn-defalut">
+                     <div class="card" style="width: 7rem;">
+                       <img src="{% static 'images/segitiga.jpeg' %}" class="card-img-top" alt="...">
+                       <div class="card-body">
+                       <center><h6 class="card-text">Segitiga</h6></center>
+                      </div>
+                    </div> 
+                  </div></button></a>
+                  <div class="col">
+                    <a href="/lingkaran">
+                      <button class="btn btn-defalut">
+                      <div class="card" style="width: 7rem;">
+                        <img src="{% static 'images/lingkaran.jpeg' %}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                        <center><h6 class="card-text">Lingkaran</h6></center>
+                      </div>
+                    </div> 
+                  </div></button></a>
+                    <div class="col">
+                      <a href="/jajargenjang">
+                        <button class="btn btn-defalut">
+                        <div class="card" style="width: 7rem;">
+                          <img src="{% static 'images/jajargenjang1.jpeg' %}" class="card-img-top" alt="...">
+                          <div class="card-body">
+                          <center><h6 class="card-text">Jajar genjang</h6></center>
+                        </div>
+                      </div> 
+                    </div></button></a>
+                      <div class="col">
+                        <a href="/trapesium">
+                          <button class="btn btn-defalut">
+                          <div class="card" style="width: 7rem;">
+                            <img src="{% static 'images/trapesium.jpeg' %}" class="card-img-top" alt="...">
+                            <div class="card-body">
+                            <center><h6 class="card-text">Trapesium</h6></center>
+                          </div>
+                        </div> 
+                      </div></button></a>
+                        <div class="col">
+                          <a href="/belahketupat">
+                            <button class="btn btn-defalut">
+                            <div class="card" style="width: 7rem;">
+                              <img src="{% static 'images/belahketupat.jpeg' %}" class="card-img-top" alt="...">
+                              <div class="card-body">
+                              <center><h6 class="card-text">Belah Ketupat</h6></center>
+                            </div>
+                          </div> 
+                        </div></button></a>
+                          <div class="col">
+                            <a href="/layanglayang">
+                              <button class="btn btn-defalut">
+                              <div class="card" style="width: 7rem;">
+                                <img src="{% static 'images/layanglayang.jpeg' %}" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                <center><h6 class="card-text">Layang-layang</h6></center>
+                              </div>
+                            </div> 
+                          </div></button></a>
+ 
+ <script>src="{% static 'js/bootstrap.bundle.js' %}"</script>
+</body>
+</html>
